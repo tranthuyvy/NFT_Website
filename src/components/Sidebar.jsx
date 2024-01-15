@@ -1,8 +1,9 @@
 import React from 'react'
-import '../styles/Sidebar.scss'
 import { RiHomeSmileFill } from "react-icons/ri";
 import { MdOutlineLibraryMusic } from "react-icons/md";
 import { IoMdSearch } from "react-icons/io";
+import Players from './Players';
+import '../styles/Sidebar.scss'
 
 const Sidebar = () => {
   return (
@@ -26,6 +27,7 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
+      <Players />
     </div>
   )
 }
