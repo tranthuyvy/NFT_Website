@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import axios from 'axios'
 import { useStateProvider } from '../utils/StateProvider'
 import { reducerCases } from '../utils/Constants'
+import '../styles/Players.scss'
 
 const Players = () => {
   const [{ token, playlists }, dispatch] = useStateProvider()
@@ -15,10 +16,8 @@ const Players = () => {
             "Content-Type": "application/json",
           },
         });
-
         const { items } = response.data;
-        const Playlists = items.map(({ name, id }) => ({ name, id }));
-
+        const Playlists = items.map(({ name, id, images }) => ({ name, id, images }));
         dispatch({ type: reducerCases.SET_PLAYLISTS, playlists: Playlists });
 
       } catch (error) {
@@ -30,10 +29,13 @@ const Players = () => {
   }, [token, dispatch]);
 
   return (
-    <div>
+    <div className='players_container'>
       <ul>
-        {playlists?.map(({ name, id }) => (
-          <li key={id}>{name}</li>
+        {playlists?.map(({ name, id, images }) => (
+          <li key={id}>
+            <img src={images[0]?.url} alt="" />
+            {name}
+          </li>
         ))}
       </ul>
     </div>
