@@ -19,23 +19,23 @@
         block-size: auto;
       }
     }
-  }
 
-  ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-
-    li {
+    ul {
+      list-style-type: none;
       display: flex;
+      flex-direction: column;
       gap: 1rem;
-      cursor: pointer;
-      transition: 0.3 ease-in-out;
+      padding: 1rem;
 
-      &:hover {
-        color: white;
+      li {
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+        transition: 0.3 ease-in-out;
+
+        &:hover {
+          color: white;
+        }
       }
     }
   }
