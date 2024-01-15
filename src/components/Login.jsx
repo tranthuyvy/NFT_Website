@@ -1,28 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const Container = styled.div`
-  display: flex;
-  justify-context: center;
-  align-items:center;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  background-color: #1db954;
-  gap: 5rem;
-  img {
-    height: 20vh;
-  }
-  button {
-    padding: 1rem 5rem;
-    border-radius: 5rem;
-    background-color: black;
-    color: #49f585;
-    border: none;
-    font-size: 1.6rem;
-    cursor: pointer;
-  }
-`
+import '../styles/Login.scss'
 
 const Login = () => {
   const handleClick = () => {
@@ -44,10 +21,10 @@ const Login = () => {
   }
 
   return (
-    <Container>
+    <div className='container'>
       <img src='https://img.icons8.com/ios-filled/250/spotify.png' alt='Spotify' />
       <button onClick={handleClick}>Connect Spotify</button>
-    </Container>
+    </div>
   )
 }
 
