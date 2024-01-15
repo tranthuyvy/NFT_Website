@@ -10,7 +10,7 @@ const Sidebar = () => {
     <div className='sidebar_container'>
       <div className='top_links'>
         <div className='logo'>
-          <img src='https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Black.png' alt='Spotify' />
+          <img src='https://gucongnghe.com/wp-content/uploads/2019/08/Spotify.jpg' alt='Spotify' />
         </div>
         <ul>
           <li>

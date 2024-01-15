@@ -1,5 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import styled from 'styled-components';
 import { FaSearch } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
 import { useStateProvider } from '../utils/StateProvider'
