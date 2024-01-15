@@ -18,9 +18,10 @@ const Spotify = () => {
           "Content-Type": "application/json",
         }
       })
+      console.log(data)
       const userInfo = {
         userId: data?.id,
-        userName: data?.name,
+        userName: data?.display_name,
       }
       console.log(userInfo)
       dispatch({ type: reducerCases.SET_USER, userInfo })
