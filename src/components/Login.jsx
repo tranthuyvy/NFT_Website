@@ -4,7 +4,7 @@ import '../styles/Login.scss'
 const Login = () => {
   const handleClick = () => {
     const client_id = '667143ad38064a298e9d8d686a1aadff'
-    const redirect_url = "http://localhost:3000/";
+    const redirect_url = "https://spotify-two-puce.vercel.app/";
     const api_url = 'http://accounts.spotify.com/authorize'
     const scope = [
       "user-read-private",
